@@ -1,0 +1,682 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+   
+  
+}
+body{
+   
+    overflow-x: hidden;
+  
+}
+
+.top{
+    overflow: hidden;
+     border-bottom: 1px solid lightgray;
+
+     padding: 12px 6px;
+    margin: 10px 66px;
+
+    
+}
+.top > a{
+    float: left;
+    text-decoration: none;
+    color: gray;
+    
+}
+.top > a:hover {
+        color: #4d8eff;
+}
+
+.top select{
+    float:right;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+ 
+   
+}
+
+nav {
+    height: 70px;
+background-color: white;
+position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 7;
+    box-shadow: 0px 23px 12px -22px #ada8a8;
+    
+}
+
+
+.home 
+{
+    background-image: url(images/home-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 700px;
+    width: 100%;
+    overflow: hidden;
+    filter: grayscale(40%);
+    margin-bottom: 20%;
+}
+
+
+nav > img {
+   position: absolute;
+    left: 73px;
+    top: 10px;
+    cursor: pointer;
+    
+}
+
+
+ul.drop-menu li {
+  display: none;
+    list-style-type: none;
+    
+}
+
+li:hover > ul.drop-menu li {
+  display: block;
+        padding: 19px 47px 31px;
+}
+
+li:hover > ul.drop-menu {
+
+  animation-name: drop;
+     animation-duration: 0.5s;
+animation-timing-function: ease-in-out;
+     position: absolute;
+     
+      
+     animation-fill-mode: forwards;    
+}
+li:hover > ul.drop-menu:hover {
+    background-color: #4d8eff;
+}
+
+.list > ul {
+    display: inline-block;
+    float: right;
+}
+.list li {
+    display: inline-block;
+     cursor: pointer;
+    padding-left: 35px;
+    font-size: 13px;
+     font-family: sans-serif;
+        height: 38px;
+}
+.list a:hover{
+    color:#4d8eff;
+   
+}
+#activee{
+    color: #4d8eff;
+}
+.list {
+    padding: 30px;
+    padding-right: 68px;
+    font-family: sans-serif;
+    position: relative;
+}
+.list a{
+    color: black;
+}
+.list a:hover{
+    text-decoration: none;
+    transition:all 0.3s;
+}
+
+ ul.drop-menu {
+     opacity: 0;
+       top: 100%;
+
+  padding: 0;
+    
+     
+
+}
+
+ul.drop-menu li{
+    border-bottom: 1px solid lightgray;
+        padding: 25px 40px;
+    text-align: center;
+    background: white;
+    transition: all 1s;
+    
+}
+ul.drop-menu li:hover{
+    background-color: #4d8eff;
+    color: white;
+}
+
+.middle{
+    
+    color: white;
+position: absolute;
+  top: 25%;
+    left: 33%;
+}
+
+    
+.middle > h1 {
+
+        font-size: 120px;
+    line-height: 60px;
+  
+    margin-bottom: 60px;
+    
+
+}
+.text {
+
+       max-width: 576px;
+    font-size: 19px;
+
+}
+.top2{
+
+     text-align: right;
+    margin-right: 145px;
+    letter-spacing: 3px;
+    margin-bottom: -10px;
+}
+
+.videobtn{
+    position: absolute;
+   left: 40%;
+    top: 139%;
+             }
+
+.over{
+    
+     
+    width: 85%;
+    height: 170px;
+    background-color: white;
+    position: absolute;
+  overflow: hidden;
+    top: 113%;
+    left: 123px;
+    z-index: 2;
+    display: flex;
+justify-content: center;
+    box-shadow: 0px 5px 12px 2px lightgrey;
+}
+.book{
+    background-color: aliceblue;
+       width: 25%;
+     font-size: 16px;
+       padding: 30px 44px;
+     
+}
+.booking{
+    width: 25%;
+
+      
+    border-right: 1px solid #ddd;
+       
+    font-size: 16px;
+           padding: 0 42px;
+    margin: 20px 0
+   
+    
+}
+.month{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.booking p, .book p {
+        color: #777777;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.booking .day {
+    font-size: 60px;
+    font-weight: 600;
+    margin-right: 10px;
+    
+}
+
+
+.btn, .btn3{
+   
+    background-color: #4d8eff;
+    padding: 0px 34px;
+    color: #fff;
+    font-size: 18px;
+    
+    line-height: 48px;
+  font-family: sans-serif;
+    
+    border: 1px solid #4d8eff;
+    cursor: pointer;
+ 
+    
+}
+.travel{
+    position: relative;
+}
+.travel span {
+      position: absolute;
+        font-size: 13px;
+    color:#696969;
+}
+.span1{
+  
+    left: 170px;
+    top: 38px;
+}
+.span2{
+    left: 284px;
+    top: 38px;
+}
+.btn3 {
+     line-height: 37px;
+     
+    margin-right: 72%;
+    margin-top: 27px;
+   display: inline; !important
+}
+
+.btn:hover, .btn2:hover, .btn3:hover {
+     animation-name: btn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.main{
+    text-align: center;
+    margin-bottom: 8%;
+}
+.top3{
+        font-size: 19px;
+    color: #777777;
+   
+   
+    font-weight: 600;
+}
+.stars{
+        width:100%;
+    height: 83%;
+}
+.stars p{
+        font-size: 20px;
+    color: #777777;
+   font-style: italic;
+   
+    font-weight: 600;
+}
+.right p{
+        font-size: 17px;
+    color: #777777;
+    padding: 40px 1px;
+   
+    font-weight: 600;
+}
+.our {
+        font-family: serif;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+}
+.bottom > p, .top > p, .right li{
+            line-height: 26px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #777777;
+    
+    margin: auto;
+}
+.btn2{
+    display: inline-block;
+    background: #4d8eff;
+    padding: 0px 27px;
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 48px;
+
+    border: 1px solid #4d8eff;
+    cursor: pointer;
+    
+}
+ 
+.video{
+    position: relative;
+        margin-bottom: 23%;
+}
+.vid{
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  
+}
+
+.rooms{
+    background-color: aliceblue;
+    padding-top: 23%;
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+.again {
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+      overflow: hidden;
+    position: relative;
+}
+
+.left > img{
+    max-width: 100%;
+    
+}
+
+.right{
+        padding-left: 49px;
+      position: relative;
+    padding-top: 17px;
+   
+   
+}
+
+
+
+.price{
+    color: #4d8eff;
+    font-family: sans-serif;
+    font-size: 42px;
+}
+.price span {
+    font-size: 20px;
+}
+.pric{
+    
+  font-size: 42px;
+}
+
+li i {
+       color: #4d8eff;
+    
+}
+
+.again div {
+    width: 100%;
+}
+
+.ul2
+{ float: left;
+        width: 50% !important;
+   
+}
+.move{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    color: #29252577;
+     transition: all 1s;
+    
+    
+}
+.move1{
+    position: absolute;
+        top: 56%;
+    left: 90%;
+    color: #29252577;
+    transition: all 1s;
+    
+}
+.move:hover, .move1:hover {
+    height: 20px;
+    color: white;
+    background-color: #4d8eff;
+}
+
+.main-tani{
+    
+    width: 100%;
+    
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+        padding-bottom: 7%;
+}
+.main-tani .cont {
+    width: 80%;
+    height: 21.5%;
+    background-color: white;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.h9{
+       font-size: 75px;
+    color: #4d8eff;
+        margin-top: -5%;
+    text-shadow: 8px 10px 15px #7777;
+    z-index: 4;
+}
+
+
+.lead {
+   
+    font-weight: 500;
+    color: grey;
+}
+
+
+
+
+.overlay 
+{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+    
+  
+    transition: all 1.2s ;
+ 
+}
+.circle:hover .overlay{
+      background: #4d8eff;
+    opacity: .5;
+
+    
+  
+}
+
+.circle{
+    border-radius: 50%;
+    position: relative;
+}
+.carousel-indicators .active .overlay {
+    background: #4d8eff;
+    opacity: .8;
+}
+
+
+.blogs{
+    margin-top: 50%;
+    text-align: center;
+    position: absolute;}
+
+
+ 
+.fa-arrow-right, .fa-dollar-sign, .fa-arrow-up, .fa-arrow-down{
+    
+     color:#4d8eff;
+}
+.gold{
+    color: gold;
+}
+
+
+.carousel-indicators li{
+    
+    width: 100px;
+    height: 100px;
+    text-indent: 0;
+    opacity: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -180px;
+  
+    z-index: 5;
+}
+
+.p:hover h5{
+       color: #4d8eff;
+     transition: all 1.1s ;
+}
+.p:hover img{
+    transform: scale(1.1,1.1);
+    transition: all 1.1s ;
+}
+.p{
+     margin: 25px;
+     width: 420px; 
+    overflow: hidden;
+    
+}
+.p .b {
+    
+    width: 100%;
+}
+
+.prices{
+    
+    margin-top: 75%;
+    cursor: pointer;
+}
+
+ h5 {
+          padding: 15px 0px;
+    font-size: 23px;
+     text-align: initial;
+     font-family: inherit;
+line-height: 1.4em;
+}
+
+.travel p{
+        color: #696969;
+    font-size: 19px;
+    font-family: sans-serif;
+    text-align: initial;
+}
+footer{
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),  url(images/footer-bg.jpg) no-repeat center;
+    background-size: cover;
+   
+}
+footer p, .list-unstyled li{
+    color: #777777;
+   font-size: 17px;
+    font-family: cursive;
+     cursor: pointer;
+
+    
+}
+footer h6{
+    color: white;
+        font-size: 22px;
+    font-family: sans-serif;
+        margin: 25px 0px;
+     cursor: pointer;
+}
+footer .container {
+    max-width: 1300px;
+   
+}
+.foot div{
+        padding: 150px 0px;
+    
+}
+.list-unstyled li{
+    width: 50%;
+    float: left;
+    padding: 8px;
+    
+}
+.list-unstyled li:hover{
+    color: white;
+    transition: all 1.1s;
+}
+.foot input{
+        background: none;
+    padding: 6px;
+    color: white;
+    border: 1px solid darkgrey;
+}
+
+.foot img
+{
+    margin-left: 16px;
+    margin-top: 14px;
+}
+.send img{
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.footer-bottom span, .fa-heart{
+    color:#4d8eff;
+}
+.footer .last {
+    text-align: left;
+}
+.last a {
+    color: white;
+    padding: 12px;
+}
+.last a:hover{
+    color:  #4d8eff;
+    transition: all 1.1s;
+}
+@keyframes drop {
+      0%{opacity: 0;
+          transform:  translateY(30px);
+    }
+    
+    100%{opacity: 1;
+        transform:  translateY(10px);
+    }
+    
+}
+
+@keyframes btn {
+    0%{
+       
+        background-color: #4d8eff;
+        color: white;
+    }
+    100%{
+        
+        background-color: white;
+        color: #4d8eff;
+    }
+    
+}
